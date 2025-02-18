@@ -1,0 +1,17 @@
+{
+    "name": "NLP2025Cal",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "NLP2025のプログラム表(https://www.anlp.jp/proceedings/annual_meeting/2025/)に「カレンダーに追加」ボタンを付与するChrome拡張",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.anlp.jp/proceedings/annual_meeting/2025/*"
+        ],
+        "js": [
+          "content.js"
+        ],
+        "run_at": "document_idle"
+      }
+    ]
+  }
